@@ -1,0 +1,65 @@
+@charset "UTF-";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.root{
+    
+}
+
+body{
+    height: 95vh;
+    background: rgb(98, 203, 238) url('imagens/conta.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.container#q1{
+   background-color: white;
+   position: absolute;
+   width: 700px;
+   height: 250px;
+   border: 1px solid black;
+   border-radius: 10px;
+   transform: translate(-50%, -50%);
+   left: 50%;
+   top: 50%;
+   text-align: center;
+}
+
+#q2{
+    background-color: rgb(66, 166, 237);
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 3px 5px rgb(100, 98, 98);
+}
+
+#iss,#q3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container#a1,#aliquota{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#aliquota{
+    color: red;
+}
+
+p{
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+#tab2,#tab4{
+    width: 70px;
+}
+
+#tab1,#tab2,#tab3,#tab4{
+    text-align: center;
+}

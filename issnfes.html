@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alíquota issqn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <main>
+         <div class="container" id="q1">
+                <div class="container" id="q2">
+                    <h3>CALCULO DE ALÍQUOTA DE ISSQN NFSe</h3>
+                </div>
+                <div id="iss">
+                    <img src="imagens/iss-nfes.png" alt="iss-nfes">
+                </div>
+                <div class="container" id="q3">
+                    <h3>Anexos do Simples Nacional</h3>
+                </div>
+                <div class="container" id="a1">
+                    <div class="container" id="a1">
+                        <abbr title="Receita bruta dos 12 ultimos meses">
+                            <h5>12 Ultimos meses</h5>
+                            <input type="number" id="tab1" >
+                        </abbr>
+                    </div>
+                    <div class="container" id="a1">
+                        <abbr title="Alíquota da receita bruta conforme FAIXA">
+                            <h5>Alíq.</h5>
+                            <input type="number" id="tab2">
+                        </abbr>
+                    </div>
+                    <div class="container" id="a1">
+                        <abbr title="Dedução do simples conforme FAIXA">
+                            <h5>Dedução</h5>
+                            <input type="number" id="tab3">
+                        </abbr>
+                    </div>
+                    <div class="container" id="a1">
+                        <abbr title="Percentual de Repartição do ISS conforme FAIXA">
+                            <h5>PRT</h5>
+                            <input type="number" id="tab4">
+                        </abbr>
+                    </div>
+                    <div class="container" id="a1">
+                        <input type="button" value="calcular" onclick="Cal1()" id="button_1">
+                    </div>
+                    <div class="container" id="aliquota">
+                        <abbr title="Alíquota que vai usar na nota">
+                            <h5>Al.ISS</h5>
+                        </abbr>
+                            <p id="x1">-</p>
+                    </div>
+                </div>
+         </div>    
+     </main>
+      <script>
+        function Cal1(){
+            let f = Number(tab1.value)
+            let a = Number(tab2.value)
+            let d = Number(tab3.value)
+            let p = Number(tab4.value)
+            let prt = p / 100
+            let resultado = (((f * (a / 100)) - d) / f) * p;
+            let prtiss = resultado.toFixed(2).replace('.',',')
+            x1.innerHTML = `${prtiss}`
+        }  
+        </script>                
+</body>
+</html>  
