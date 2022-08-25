@@ -15,48 +15,24 @@ body{
     background-size: cover;
 }
 
-#anexo{
-    position: absolute;
-    display: inline-block;
-    background-color: #2f9824;
-    width: 30%;
-    left: 35%;
-    top: 10%;
-    height: 10%;
-    text-align: center;
-    border-radius: 5px;
-}
 
-#anexo h3,h4{
-    padding-top: 10px;
-}
-
-#anexo h4{
-    display: inline-block;
-    width: 30%;
-    background-color: #a4c74c;
-    border-radius: 10px;
-}
-
-#anexo:hover h4{
-    color: white;
-}
 
 .container#q1{
    background-color: white;
    position: absolute;
    width: 700px;
-   height: 250px;
+   height: 400px;
    border: 1px solid black;
    border-radius: 10px;
    transform: translate(-50%, -50%);
    left: 50%;
    top: 50%;
    text-align: center;
+   
 }
 
 #q2{
-    background-color: rgb(66, 166, 237);
+    background-color: #05B4F6;
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -95,6 +71,23 @@ body{
     padding-top: 10px;
 }
 
-#name h4{
-    padding-top: 28px;
+#simples{
+    display: inline-block;
+    margin: 9%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2f9824;
 }
+
+:hover#simples{
+    background-color: #a4c74c;
+}
+
+abbr, a{
+    text-decoration: none;
+}
+
+#name img{
+    width: 4%;
+}
+
