@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alíquota issqn</title>
+    <title>Alíquota da NFSE</title>
+    <link rel="shortcut icon" href="imagens/favicon-iss.png" type="NFSe">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <header>
+          <abbr title="Click en Lpc 123 e consulte o feturamento segundo os anexos">
+              <div id="anexo">
+                <h3>Click abaixo na tabela segundo o faturamento</h3>
+                <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank">
+                    <h4>Anexos Lpc 123</h4>
+                </a>
+              </div>
+          </abbr>
+      </header>
       <main>
          <div class="container" id="q1">
                 <div class="container" id="q2">
@@ -53,10 +64,16 @@
                         </abbr>
                             <p id="x1">-</p>
                     </div>
+                    <div>
+                    <p id="obs">Confira os valores digitados, é de sua total responsabilidade!</p>
+                    </div>
+                    <div id="name">
+                    <h4>Criado por Davi Ribeir (https://github.com/daviribeiroads)</h4>
+                    </div>
                 </div>
-         </div>    
-     </main>
-      <script>
+         </div>        
+     </main>     
+     <script>
         function Cal1(){
             let f = Number(tab1.value)
             let a = Number(tab2.value)
@@ -67,6 +84,6 @@
             let prtiss = resultado.toFixed(2).replace('.',',')
             x1.innerHTML = `${prtiss}`
         }  
-        </script>                
+     </script>                
 </body>
 </html>  
