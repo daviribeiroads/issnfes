@@ -20,8 +20,8 @@ body{
 .container#q1{
    background-color: white;
    position: absolute;
-   width: 700px;
-   height: 400px;
+   width: 60%;
+   height: px;
    border: 1px solid black;
    border-radius: 10px;
    transform: translate(-50%, -50%);
@@ -73,7 +73,7 @@ body{
 
 #simples{
     display: inline-block;
-    margin: 9%;
+    margin: 7%;
     padding: 10px;
     border-radius: 5px;
     background-color: #2f9824;
