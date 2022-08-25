@@ -20,7 +20,8 @@ body{
 .container#q1{
    background-color: white;
    position: absolute;
-   width: 60%;
+   max-width: 800%;
+   min-width: 70%;
    height: px;
    border: 1px solid black;
    border-radius: 10px;
@@ -49,14 +50,18 @@ body{
     padding-top: 10px;
 }
 
+input{
+    padding: 4px;
+}
+
 #aliquota{
     color: red;
 }
 
 #x1{
     border: 1px solid black;
-    border-radius: 5px;
-
+    border-radius: 3px;
+    padding: 4px;
 }
 
 #tab2,#tab4{
