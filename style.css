@@ -13,15 +13,14 @@ body{
     height: 95vh;
     background: rgb(98, 203, 238) url('imagens/conta.jpg') center center no-repeat fixed;
     background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-.container#q1{
+main{
    background-color: white;
    position: absolute;
-   max-width: 800%;
-   min-width: 70%;
+   min-width: 90%;
+   margin: auto;
    height: px;
    border: 1px solid black;
    border-radius: 10px;
@@ -29,12 +28,16 @@ body{
    left: 50%;
    top: 50%;
    text-align: center;
-   
+}
+
+#a1{
+    padding: 10px;
 }
 
 #q2{
     background-color: #05B4F6;
     text-align: center;
+    padding: 8px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0px 3px 5px rgb(100, 98, 98);
@@ -56,6 +59,7 @@ input{
 
 #aliquota{
     color: red;
+    width: 60px;
 }
 
 #x1{
@@ -65,7 +69,7 @@ input{
 }
 
 #tab2,#tab4{
-    width: 70px;
+    width: 60px;
 }
 
 #tab1,#tab2,#tab3,#tab4{
