@@ -25,25 +25,25 @@
                     <div class="container" id="a1">
                         <abbr title="Receita bruta dos 12 ultimos meses">
                             <h5>Fatur. dos 12 Ultimos meses</h5>
-                            <input type="number" id="tab1" >
+                            <input type="number" id="tab1" placeholder="Digite o valor">
                         </abbr>
                     </div>
                     <div class="container" id="a1">
                         <abbr title="Alíquota da receita bruta conforme FAIXA">
                             <h5>Alíq.</h5>
-                            <input type="number" id="tab2">
+                            <input type="number" id="tab2" placeholder="Alíq">
                         </abbr>
                     </div>
                     <div class="container" id="a1">
                         <abbr title="Dedução do simples conforme FAIXA">
                             <h5>Dedução</h5>
-                            <input type="number" id="tab3">
+                            <input type="number" id="tab3" placeholder="Digite o valor">
                         </abbr>
                     </div>
                     <div class="container" id="a1">
                         <abbr title="Percentual de Repartição do ISS conforme FAIXA">
                             <h5>PRT/iss</h5>
-                            <input type="number" id="tab4">
+                            <input type="number" id="tab4" placeholder="Alíq">
                         </abbr>
                     </div>
                         <div class="container" id="a1">
@@ -74,7 +74,7 @@
      </main>     
      <script>
         function Cal1(){
-            let f = Number(tab1.value)
+            let f = Number(tab1.value.tolocaleString('pt-BR',{ style:'currency', currency: 'BRL'}))
             let a = Number(tab2.value)
             let d = Number(tab3.value)
             let p = Number(tab4.value)
