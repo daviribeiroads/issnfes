@@ -5,10 +5,6 @@
     padding: 0px;
 }
 
-.root{
-    
-}
-
 body{
     height: 95vh;
     background: rgb(98, 203, 238) url('imagens/conta.jpg') center center no-repeat fixed;
@@ -22,8 +18,7 @@ main{
    background-color: white;
    position: absolute;
    min-width: 90%;
-   margin: auto;
-   height: px;
+   margin: auto; 
    border: 1px solid black;
    border-radius: 10px;
    transform: translate(-50%, -50%);
