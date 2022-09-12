@@ -72,13 +72,17 @@ input{
     text-align: center;
 }
 
+#clean button{
+    padding: 5px;
+}
+
 #obs{
     padding-top: 10px;
 }
 
 #simples{
     display: inline-block;
-    margin: 7%;
+    margin: 5%;
     padding: 10px;
     border-radius: 5px;
     background-color: #2f9824;
