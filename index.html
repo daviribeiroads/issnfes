@@ -7,6 +7,7 @@
     <title>Alíquota da NFSE</title>
     <link rel="shortcut icon" href="imagens/favicon-iss.png" type="NFSe">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
       
@@ -51,7 +52,7 @@
                         </abbr>
                     </div>
                         <div class="container" id="a1">
-                        <input type="button" value="calcular" onclick="Cal1()" id="button_1">
+                        <input type="button" value="calcular" onclick="calcular()" id="button_1">
                         </div>
                     <div class="container" id="aliquota">
                         <abbr title="Alíquota que vai usar na nota">
@@ -81,16 +82,7 @@
          </div>        
      </main>     
      <script>
-        function Cal1(){
-            let f = Number(tab1.value)
-            let a = Number(tab2.value)
-            let d = Number(tab3.value)
-            let p = Number(tab4.value)
-            let prt = p / 100
-            let resultado = (((f * (a / 100)) - d) / f) * p;
-            let prtiss = resultado.toFixed(2).replace('.',',')
-            x1.innerHTML = `${prtiss}`
-        }  
+        
      </script>                
 </body>
 </html>  
